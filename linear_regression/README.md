@@ -11,7 +11,7 @@ The codes step-by-step develop the linear regression model, following a logical 
 Data for Admission in the University from Kaggle: https://www.kaggle.com/datasets/akshaydattatraykhare/data-for-admission-in-the-university?source=post_page-----b3cdb9de1a24--------------------------------
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/linear_regression/images/data.png" alt="Material Bread logo">
+    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/data.png" alt="Material Bread logo">
 <p>
 
 ## Results
@@ -19,15 +19,15 @@ Data for Admission in the University from Kaggle: https://www.kaggle.com/dataset
 ### Algorithm
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/linear_regression/images/explanation1.png" alt="Material Bread logo">
+    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/explanation1.png" alt="Material Bread logo">
 <p>
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/linear_regression/images/explanation2.png" alt="Material Bread logo">
+    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/explanation2.png" alt="Material Bread logo">
 <p>
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/linear_regression/images/explanation3.png" alt="Material Bread logo">
+    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/explanation3.png" alt="Material Bread logo">
 <p>
 
 ### Images
@@ -35,25 +35,25 @@ Data for Admission in the University from Kaggle: https://www.kaggle.com/dataset
 - Correlations Heatmap
 
 <p align="center">
-    <img width="600" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/linear_regression/images/correlations_heatmap.png" alt="Material Bread logo">
+    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/correlations_heatmap.png" alt="Material Bread logo">
 <p>
 
 - Model's Weights X Regularization Parameter
 
 <p align="center">
-    <img width="600" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/linear_regression/images/weights_lambda.png" alt="Material Bread logo">
+    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/weights_lambda.png" alt="Material Bread logo">
 <p>
 
 - Train Loss
 
  <p align="center">
-    <img width="600" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/linear_regression/images/train_loss.png" alt="Material Bread logo">
+    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/train_loss.png" alt="Material Bread logo">
 <p>
 
 - Final Test Loss
 
 <p align="center">
-    <img width="400" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/linear_regression/images/final_loss.png" alt="Material Bread logo">
+    <img width="400" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/final_loss.png" alt="Material Bread logo">
 <p>
 
 ## Technologies and Libraries

@@ -9,7 +9,7 @@ Logistic regression is one of the most well-known Machine Learning models and is
 COVID-19 Dataset from Kaggle: https://www.kaggle.com/datasets/meirnizri/covid19-dataset?source=post_page-----737ee80cba7d--------------------------------
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/logistic_regression/images/data.PNG" alt="Material Bread logo">
+    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/data.PNG" alt="Material Bread logo">
 <p>
 
 
@@ -18,15 +18,15 @@ COVID-19 Dataset from Kaggle: https://www.kaggle.com/datasets/meirnizri/covid19-
 ### Algorithm
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/logistic_regression/images/explanation1.PNG" alt="Material Bread logo">
+    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/explanation1.PNG" alt="Material Bread logo">
 <p>
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/logistic_regression/images/explanation2.PNG" alt="Material Bread logo">
+    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/explanation2.PNG" alt="Material Bread logo">
 <p>
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/logistic_regression/images/explanation3.PNG" alt="Material Bread logo">
+    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/explanation3.PNG" alt="Material Bread logo">
 <p>
 
 ### Images
@@ -34,31 +34,31 @@ COVID-19 Dataset from Kaggle: https://www.kaggle.com/datasets/meirnizri/covid19-
 - Train Loss
 
 <p align="center">
-    <img width="600" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/logistic_regression/images/train_loss.PNG" alt="Material Bread logo">
+    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/train_loss.PNG" alt="Material Bread logo">
 <p>
 
 - Precision-Recall Plot
   
 <p align="center">
-    <img width="600" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/logistic_regression/images/precision_recall_plot.PNG" alt="Material Bread logo">
+    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/precision_recall_plot.PNG" alt="Material Bread logo">
 <p>
 
 - Precision-Recall Scores
 
 <p align="center">
-    <img width="300" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/logistic_regression/images/precision_recall_scores.PNG" alt="Material Bread logo">
+    <img width="300" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/precision_recall_scores.PNG" alt="Material Bread logo">
 <p>
  
 - Prediction Count
  
 <p align="center">
-    <img width="300" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/logistic_regression/images/prediction_count.PNG" alt="Material Bread logo">
+    <img width="300" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/prediction_count.PNG" alt="Material Bread logo">
 <p>
  
 - Final Loss
 
 <p align="center">
-    <img width="300" src="https://github.com/Samirnunes/data-science/blob/main/machine_learning/model_implementation/logistic_regression/images/final_loss.PNG" alt="Material Bread logo">
+    <img width="300" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/prediction_count.PNG" alt="Material Bread logo">
 <p>
  
 ## Technologies and Libraries
