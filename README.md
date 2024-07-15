@@ -2,7 +2,7 @@
 
 Each folder has a `README` explaining the implemented algorithm plus the test.
 
-### Algorithms
+## Algorithms
 
 - Linear Regression
 - Logistic Regression
