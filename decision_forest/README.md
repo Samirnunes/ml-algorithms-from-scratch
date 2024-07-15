@@ -1,1 +1,1 @@
-# Decision Forest with ID3 Algorithm
+# Decision Forest with the ID3 Algorithm
