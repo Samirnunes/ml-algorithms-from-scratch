@@ -42,7 +42,7 @@ class DecisionTree:
             string += self.__str_recursive(level, node.false_child, "False")
         return string
         
-    def train(self, X: pd.DataFrame, y: pd.DataFrame):
+    def fit(self, X: pd.DataFrame, y: pd.DataFrame):
         if type(y) == pd.DataFrame:
             target = y.columns[0]
         else:
