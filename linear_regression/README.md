@@ -14,9 +14,7 @@ Data for Admission in the University from Kaggle: https://www.kaggle.com/dataset
     <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/data.png" alt="Material Bread logo">
 <p>
 
-## Results
-
-### Algorithm
+## Algorithm Implementation
 
 <p align="center">
     <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/explanation1.png" alt="Material Bread logo">
@@ -30,7 +28,7 @@ Data for Admission in the University from Kaggle: https://www.kaggle.com/dataset
     <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/explanation3.png" alt="Material Bread logo">
 <p>
 
-### Images
+## Results
 
 - Correlations Heatmap
 
