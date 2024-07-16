@@ -1,4 +1,4 @@
-# Decision Forest with the ID3 Algorithm
+# Decision Tree with the ID3 Algorithm
 
 Decision tree is a non-parametric supervised learning method based on a structure composed of nodes where decisions are made based on the value of a given feature. The choice is made at the leaf nodes based on the decisions made at each node.
 
