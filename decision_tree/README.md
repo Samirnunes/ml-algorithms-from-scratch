@@ -43,7 +43,7 @@ A method was also created to print the generated tree. It shows each node with i
 - Metrics in the training set in the bank churn problem
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/decision_tree/images/metrics.png" alt="Material Bread logo">
+    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/decision_tree/images/metrics.png" alt="Material Bread logo">
 <p>
 
 
