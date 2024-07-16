@@ -19,7 +19,7 @@ The implementation of the decision tree and the ID3 algorithm was done in Python
 In the ID3 algorithm, we have, analogously, the concept of entropy and mutual information, which is called information gain in this context. Each node has a given distribution of the target variable, summarized as the number of zeros and ones of this variable that the node has due to the decisions already made, and its entropy relative to the target variable, here represented as the random variable Y, with y taking the values of 0 or 1. After a split into child nodes based on a feature, here represented by the random variable X, and a given value of it, each of the new nodes will also have an associated entropy. The information gain I(Y,X) is then given by the following equation:
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/decision_tree/images/info_gain.png" alt="Material Bread logo">
+    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/decision_tree/images/info_gain.png" alt="Material Bread logo">
 <p>
 
 In this equation, T represents the set of subsets created by splitting the node's data into two child nodes, and p(t) is the proportion of the number of elements in t relative to the dataset before the split. Here, the information gain represents how much information the feature used for the split provided about the target variable, analogous to what occurs in the binary channel. The goal of the ID3 algorithm is, therefore, to greedily choose the features and their respective values such that the information gains are as high as possible at each split, minimizing the entropy of the leaf nodes.
