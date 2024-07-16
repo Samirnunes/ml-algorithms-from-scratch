@@ -9,7 +9,7 @@ To build (train) a decision tree model, algorithms such as ID3 (Iterative Dichot
 Binary Classification Bank Churn Dataset Cleaned from Kaggle: https://www.kaggle.com/datasets/prishasawhney/binary-classification-bank-churn-dataset-cleaned?select=train_cleaned.csv
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/decision_tree/images/data.png" alt="Material Bread logo">
+    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/decision_tree/images/data_image.png" alt="Material Bread logo">
 <p>
 
 ## Implementation
