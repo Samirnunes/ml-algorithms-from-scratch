@@ -12,10 +12,7 @@ COVID-19 Dataset from Kaggle: https://www.kaggle.com/datasets/meirnizri/covid19-
     <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/data.PNG" alt="Material Bread logo">
 <p>
 
-
-## Results
-
-### Algorithm
+## Algorithm Implementation
 
 <p align="center">
     <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/explanation1.PNG" alt="Material Bread logo">
@@ -29,7 +26,7 @@ COVID-19 Dataset from Kaggle: https://www.kaggle.com/datasets/meirnizri/covid19-
     <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/explanation3.PNG" alt="Material Bread logo">
 <p>
 
-### Images
+## Results
 
 - Train Loss
 
