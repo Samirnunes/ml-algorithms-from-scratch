@@ -28,7 +28,7 @@ class ID3:
         dataset = node.split
         target = node.target
         features = dataset.drop([target], axis=1).columns
-        best_info_gain = -np.inf
+        best_info_gain = 0
         best_feature = None
         best_true_split = None
         best_false_split = None

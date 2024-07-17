@@ -11,7 +11,7 @@ class DecisionTree:
     def __str__(self):
         if self.__trained:
             level = 0
-            print("E=Entropy, I=Information Gain, SF=Split Feature, SV=Split Value Threshold (True node if >=) \n")
+            print("E=Entropy, I=Information Gain, SF=Split Feature, SV=Split Value Threshold (True node if >=), n=Number of Samples \n")
             entropy = round(self.__root_node.entropy, 2) if self.__root_node.entropy is not None else None
             splits_info_gain = round(self.__root_node.splits_info_gain, 2) if self.__root_node.splits_info_gain is not None else None
             split_feature = self.__root_node.split_feature
@@ -32,10 +32,12 @@ class DecisionTree:
         splits_info_gain = round(node.splits_info_gain, 2) if node.splits_info_gain is not None else None
         split_feature = node.split_feature
         split_feature_value = round(node.split_feature_value, 2) if node.split_feature_value is not None else None
+        n_samples = node.num_samples
         string = "\t"*level + node_type + ": " + f"E={entropy}" + ", " + \
                 f"I={splits_info_gain}" + ", " + \
                 f"SF={split_feature}" + ", " + \
-                f"SV={split_feature_value}" + "\n"
+                f"SV={split_feature_value}" + ", " + \
+                f"n={n_samples}" + "\n"
         if node.true_child is not None and node.false_child is not None:
             level += 1
             string += self.__str_recursive(level, node.true_child, "True")
