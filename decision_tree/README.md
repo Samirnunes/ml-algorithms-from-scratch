@@ -50,4 +50,13 @@ A method was also created to print the generated tree. It shows each node with i
     <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/decision_tree/images/metrics.png" alt="Material Bread logo">
 <p>
 
+## References
+
+ [1] https://towardsdatascience.com/decision-trees-for-classification-id3-algorithm-explained-89df76e72df1
+ [2] https://en.wikipedia.org/wiki/ID3_algorithm
+ [3] https://sgfin.github.io/files/notes/Cover_and_Thomas_ch2_entropy.pdf
+ [4] https://www.kaggle.com/datasets/prishasawhney/binary-classification-bank-churn-dataset-cleaned?select=train_cleaned.csv
+ [5] https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
+ [6] https://www.evidentlyai.com/classification-metrics/accuracy-precision-recall
+
 
