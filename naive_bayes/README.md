@@ -21,3 +21,5 @@ Binary Classification Bank Churn Dataset Cleaned from Kaggle: https://www.kaggle
 ## References
 
 [1] https://en.wikipedia.org/wiki/Naive_Bayes_classifier
+
+[2] https://github.com/scikit-learn/scikit-learn/blob/70fdc843a/sklearn/naive_bayes.py#L147
