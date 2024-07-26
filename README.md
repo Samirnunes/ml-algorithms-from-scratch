@@ -7,3 +7,5 @@ Each folder has a `README` explaining the implemented algorithm.
 - Linear Regression
 - Logistic Regression
 - Decision Tree
+- Naive Bayes
+- K-Nearest Neighbors
