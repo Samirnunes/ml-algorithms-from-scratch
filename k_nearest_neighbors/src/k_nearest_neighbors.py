@@ -17,7 +17,7 @@ class KNearestNeighbors(ABC):
     
     @abstractmethod
     def predict(self, X: pd.DataFrame):
-        return NotImplemented
+        raise NotImplementedError("Must be implemented by the subclasses.")
     
     def _nearest_neighbors(self, instance: pd.DataFrame):
         def to_array(x):
