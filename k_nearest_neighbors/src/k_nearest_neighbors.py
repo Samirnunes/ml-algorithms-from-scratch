@@ -62,8 +62,8 @@ class KNearestNeighborsRegressor(KNearestNeighbors):
         for i in X.index:
             instance = X.loc[[i]]
             nearest_neighbors = self._nearest_neighbors(instance)
-            labels = self._instances[self._target].loc[nearest_neighbors].values
-            prediction = labels.mean()
+            labels = self._instances[self._target].loc[nearest_neighbors]
+            prediction = labels.values.mean()
             predictions.append(prediction)
         return np.array(predictions)
             
