@@ -23,44 +23,45 @@ class GaussianNaiveBayes:
         return self
             
     def predict(self, X: pd.DataFrame):
-        def maximum_a_posteriori(posterior_dict):
-            return max(posterior_dict, key=posterior_dict.get) # argmax for dict
-        
         assert self.__fitted == True
         assert list(X.columns) == self.__features
         
-        return np.array(list(map(maximum_a_posteriori, self.__posteriors(X))))
+        def maximum_a_posteriori(posterior_dict):
+            return max(posterior_dict, key=posterior_dict.get) # argmax for dict
+        
+        predictions = list(map(maximum_a_posteriori, self.__posteriors_by_row(X)))
+        return np.array(predictions)
     
     def predict_proba(self, X: pd.DataFrame):
+        assert self.__fitted == True
+        assert list(X.columns) == self.__features
+        
         def likelihood_to_probability(posterior_dict):
             posteriors_sum = sum(posterior_dict.values())
             for key, val in posterior_dict.items():
                 posterior_dict[key] = val/posteriors_sum
             return posterior_dict
-            
-        assert self.__fitted == True
-        assert list(X.columns) == self.__features
         
-        return np.array(list(map(likelihood_to_probability, self.__posteriors(X))))
+        predictions = list(map(likelihood_to_probability, self.__posteriors_by_row(X)))
+        return np.array(predictions)
     
-    def __posteriors(self, X: pd.DataFrame):
+    def __posteriors_by_row(self, X: pd.DataFrame):
         posteriors_by_class = {}
         posteriors_by_row = []
         for c in self.__classes:
-            posteriors_by_class[c] = self.__posterior(c, X)
+            posteriors_by_class[c] = self.__posterior_by_class(c, X)
         for i in range(len(X)):
             posteriors_by_row.append({key: array[i] for key, array in posteriors_by_class.items()})
         return posteriors_by_row
     
-    def __posterior(self, c: int, X: pd.DataFrame):
-        posterior = np.full((len(X),), self.__class_priors[c])
+    def __posterior_by_class(self, c: int, X: pd.DataFrame):
+        def gaussian_pdf(x, mu, sigma):
+            return (1/np.sqrt(2*np.pi*sigma**2))*np.exp((-(x-mu)**2)/(2*sigma**2))
+        
+        posterior = self.__class_priors[c]
         for feature in X.columns:
             mean = self.__means[feature][c]
             std = self.__stds[feature][c]
-            gaussian = lambda x: GaussianNaiveBayes.gaussian_pdf(x, mean, std)
-            posterior = posterior * np.array(X[feature].apply(gaussian))
+            gaussian = np.vectorize(gaussian_pdf, excluded=["mu", "sigma"])
+            posterior = posterior * gaussian(np.array(X[feature]), mean, std)
         return posterior
-        
-    @staticmethod
-    def gaussian_pdf(x, mu, sigma):
-        return (1/np.sqrt(2*np.pi*sigma**2))*np.exp((-(x-mu)**2)/(2*sigma**2))

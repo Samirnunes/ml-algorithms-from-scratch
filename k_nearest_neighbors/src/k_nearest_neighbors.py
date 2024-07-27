@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 from abc import ABC, abstractmethod
 
+from sklearn import neighbors
+
 class KNearestNeighbors(ABC):
     def __init__(self, k=5):
         self._k = k
@@ -10,8 +12,9 @@ class KNearestNeighbors(ABC):
         self._fitted = False
         
     def fit(self, X: pd.DataFrame, y: pd.DataFrame):
-        self._instances = pd.concat([X, y], axis=1)
-        self._target = y.columns[0]
+        self._instances = X
+        self._labels = y
+        self._target = self._labels.columns[0]
         self._fitted = True
         return self
     
@@ -20,18 +23,12 @@ class KNearestNeighbors(ABC):
         raise NotImplementedError("Must be implemented by the subclasses.")
     
     def _nearest_neighbors(self, instance: pd.DataFrame):
-        def to_array(x):
-            return np.array(x).reshape(-1)
-        def distance(x):
-            return KNearestNeighbors.euclidean_distance(to_array(instance), to_array(x))
-        distances = self._instances.drop([self._target], axis=1).apply(distance, axis=1)
+        distances = np.linalg.norm(self._instances.values - instance.values, axis=1)
+        distances = pd.Series(distances, index=self._instances.index)        
         nearest_distances = distances.sort_values(ascending=True)[:self._k]
-        return np.array(nearest_distances.index)
+        nearest_neighbors = nearest_distances.index
+        return np.array(nearest_neighbors)
     
-    @staticmethod
-    def euclidean_distance(instance1: np.array, instance2: np.array):
-        return np.linalg.norm(instance1 - instance2)
-
 class KNearestNeighborsClassifier(KNearestNeighbors):
     def __init__(self, k=5):
         super().__init__(k)
@@ -47,8 +44,8 @@ class KNearestNeighborsClassifier(KNearestNeighbors):
         for i in X.index:
             instance = X.loc[[i]]
             nearest_neighbors = self._nearest_neighbors(instance)
-            labels = self._instances[self._target].loc[nearest_neighbors]
-            prediction = dict((labels.value_counts()/len(labels)).sort_index())
+            neighbors_labels = self._labels.loc[nearest_neighbors]
+            prediction = dict((neighbors_labels.value_counts()/len(neighbors_labels)).sort_index())
             predictions.append(prediction)
         return np.array(predictions)
     
@@ -62,8 +59,8 @@ class KNearestNeighborsRegressor(KNearestNeighbors):
         for i in X.index:
             instance = X.loc[[i]]
             nearest_neighbors = self._nearest_neighbors(instance)
-            labels = self._instances[self._target].loc[nearest_neighbors]
-            prediction = labels.values.mean()
+            neighbors_labels = self._labels.loc[nearest_neighbors]
+            prediction = neighbors_labels.values.mean()
             predictions.append(prediction)
         return np.array(predictions)
             

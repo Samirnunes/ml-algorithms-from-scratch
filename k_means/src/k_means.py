@@ -2,10 +2,12 @@ import numpy as np
 import pandas as pd
 
 class KMeans:
-    def __init__(self, k, max_iter=100, random_state=0):
+    def __init__(self, k, max_iter=100, tol=1e-4, random_state=0):
         self.__k = k
         self.__max_iter = max_iter
+        self.__tol = tol
         self.__random_state = random_state
+        self.__fitted = False
         self.centroids = None
         self.clusters = None
     
@@ -18,19 +20,21 @@ class KMeans:
             new_centroids = self.__update_centroids(X, clusters)
             new_clusters = self.__assign_clusters(X, new_centroids)
             iter_count += 1
-            if new_centroids.equals(centroids) or iter_count >= self.__max_iter:
+            if np.allclose(new_centroids, centroids, atol=self.__tol) or iter_count >= self.__max_iter:
                 self.centroids = new_centroids
                 self.clusters = new_clusters
+                self.__fitted = True
                 return self
             centroids = new_centroids
             clusters = new_clusters
     
     def predict(self, X: pd.DataFrame):
+        assert self.__fitted == True
         return self.__assign_clusters(X, self.centroids)
     
     def __init_centroids(self, X):
         rand = np.random.RandomState(self.__random_state)
-        centroids = X.loc[rand.choice(X.index, size=self.__k, replace=False)].reset_index(drop=True).copy()
+        centroids = X.loc[rand.choice(X.index, size=self.__k, replace=False)].reset_index(drop=True)
         return centroids
 
     def __update_centroids(self, X: pd.DataFrame, clusters: pd.Series):
