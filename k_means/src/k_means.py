@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from shapely import centroid
 
 class KMeans:
     def __init__(self, k, max_iter=100, tol=1e-4, random_state=0):
@@ -10,16 +11,19 @@ class KMeans:
         self.__fitted = False
         self.centroids = None
         self.clusters = None
+        self.wcss = []
     
     def fit(self, X: pd.DataFrame):
         assert self.__k <= len(X)
         centroids = self.__init_centroids(X)
         clusters = self.__assign_clusters(X, centroids)
         iter_count = 0
+        self.wcss.append(self.__within_cluster_sum_of_squares(X, centroids, clusters))
         while True:
             self.centroids = self.__update_centroids(X, clusters)
             self.clusters = self.__assign_clusters(X, self.centroids)
             iter_count += 1
+            self.wcss.append(self.__within_cluster_sum_of_squares(X, self.centroids, self.clusters))
             if np.allclose(self.centroids, centroids, atol=self.__tol) or iter_count >= self.__max_iter:
                 self.__fitted = True
                 return self
@@ -48,3 +52,13 @@ class KMeans:
             cluster = np.argmin(distances)
             clusters[i] = cluster
         return pd.Series(clusters, index=X.index)
+    
+    def __within_cluster_sum_of_squares(self, X: pd.DataFrame, centroids: pd.DataFrame, clusters: pd.Series):
+        wcss = 0
+        X_with_clusters = X.copy()
+        X_with_clusters["cluster"] = clusters
+        for cluster in clusters.unique():
+            X_cluster = X_with_clusters[X_with_clusters["cluster"] == cluster].drop(["cluster"], axis=1)
+            squared_distances = np.linalg.norm(centroids.loc[cluster].values - X_cluster.values, axis=1)**2
+            wcss += squared_distances.sum()
+        return wcss
