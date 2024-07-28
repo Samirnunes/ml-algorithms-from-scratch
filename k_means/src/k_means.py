@@ -17,16 +17,14 @@ class KMeans:
         clusters = self.__assign_clusters(X, centroids)
         iter_count = 0
         while True:
-            new_centroids = self.__update_centroids(X, clusters)
-            new_clusters = self.__assign_clusters(X, new_centroids)
+            self.centroids = self.__update_centroids(X, clusters)
+            self.clusters = self.__assign_clusters(X, self.centroids)
             iter_count += 1
-            if np.allclose(new_centroids, centroids, atol=self.__tol) or iter_count >= self.__max_iter:
-                self.centroids = new_centroids
-                self.clusters = new_clusters
+            if np.allclose(self.centroids, centroids, atol=self.__tol) or iter_count >= self.__max_iter:
                 self.__fitted = True
                 return self
-            centroids = new_centroids
-            clusters = new_clusters
+            centroids = self.centroids
+            clusters = self.clusters
     
     def predict(self, X: pd.DataFrame):
         assert self.__fitted == True
