@@ -32,14 +32,38 @@ For results, we will be comparing the output of the implemented algorithm and th
 
 Predictions of the implemented algorithm:
 
+<p align="center">
+    <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_nearest_neighbors/images/classifier_predictions_implemented.png" alt="Material Bread logo">
+<p>
+
 Predictions of the algorithm implemented by scikit-learn:
+
+<p align="center">
+    <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_nearest_neighbors/images/classifier_predictions_sklearn.png" alt="Material Bread logo">
+<p>
+
+For the classification, it can be seen that the results are nearly the same. The difference occur due to some other heuristics the `KNeighborsClassifier` from `scikit-learn` uses [2].
 
 - Regression
   
 Predictions of the implemented algorithm:
 
+<p align="center">
+    <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_nearest_neighbors/images/regressor_predictions_implemented.png" alt="Material Bread logo">
+<p>
+
 Predictions of the algorithm implemented by scikit-learn:
+
+<p align="center">
+    <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_nearest_neighbors/images/regressor_predictions_sklearn.png" alt="Material Bread logo">
+<p>
+
+For the regression, the results are exactly the same.
+
+The results shows that the implementation is in fact correct.
 
 ## References
 
 [1] https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
+
+[2] https://github.com/scikit-learn/scikit-learn/blob/70fdc843a/sklearn/neighbors/_classification.py#L39
