@@ -22,7 +22,7 @@ Data for Admission in the University from Kaggle: https://www.kaggle.com/dataset
 
 ## Implementation
 
-All the implementation is present in the file `k_nearest_neighbors.py`. The theory used for that is based in the reference [1]. In our implementation, we have the parent class `KNearestNeighbors`, from which derive the classes `KNearestNeighborsClassifier` and `KNearestNeighborsRegression`.
+The implementation is present in the file `k_nearest_neighbors.py`. The theory used for that is based in the reference [1]. In our implementation, we have the parent class `KNearestNeighbors`, from which derive the classes `KNearestNeighborsClassifier` and `KNearestNeighborsRegression`.
 
 ## Results
 
