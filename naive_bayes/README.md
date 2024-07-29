@@ -32,6 +32,8 @@ The file `test.ipynb`, in the folder `src`, contains the predictions in the in t
     <img width="400" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/naive_bayes/images/probability_sklearn_model.png" alt="Material Bread logo">
 <p>
 
+It can be seen that the results are the same (except by numerical approximation errors). Therefore, the implementation made in this repository is consistent with `scikit-learn`.
+
 ## References
 
 [1] https://en.wikipedia.org/wiki/Naive_Bayes_classifier
