@@ -28,7 +28,7 @@ All the implementation is present in the file `k_nearest_neighbors.py`. The theo
 
 For results, we will be comparing the output of the implemented algorithm and that from the `scikit-learn` library.
 
-- Classification
+- Classification (Churn Prediction)
 
 Predictions of the implemented algorithm:
 
@@ -44,7 +44,7 @@ Predictions of the algorithm implemented by scikit-learn:
 
 For the classification, it can be seen that the results are nearly the same. The difference occur due to some other heuristics the `KNeighborsClassifier` from `scikit-learn` uses [2].
 
-- Regression
+- Regression (Admission in the University Prediction)
   
 Predictions of the implemented algorithm:
 
