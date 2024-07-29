@@ -18,7 +18,7 @@ The implementation is based in the mathematical theory involving the Gaussian Na
 
 ## Results
 
-The file `test.ipynb`, in the folder `src`, contains the use of the models trained in the train data in the test data, so it can be showed that the result of the implemented algorithm is the same of the algorithm present in the `scikit-learn` library.
+The file `test.ipynb`, in the folder `src`, contains the use of the models trained in the train data in the test data, so it can be showed that the result of the implemented algorithm is the same of the algorithm present in the `scikit-learn` library [2].
 
 - Predictions of the implemented algorithm:
 
