@@ -1,6 +1,8 @@
 # Gaussian Naive Bayes Algorithm
 
+Naive Bayes is a simple method for constructing classifiers. There is not a single algorithm for training such classifiers, but a family of algorithms based on a common principle: all Naive Bayes classifiers assume that the value of a particular feature is independent of the value of any other feature, given the class variable. [1]
 
+Here, I implement the Gaussian Naive Bayes Algorithm, which consist in the hypothesis that the probability density of a feature given a class of the target (i.e. the likelihood function of that feature for a given target class) is a normal distribution with mean &mu;<sub>k</sub> and standard deviation &sigma;<sub>k</sub>, that is, mean and standard deviation of the values associated with the class C<sub>k</sub>.
 
 ## Data
 
@@ -12,7 +14,7 @@ Binary Classification Bank Churn Dataset Cleaned from Kaggle: https://www.kaggle
 
 ## Implementation
 
-
+The implementation is based in the mathematical theory involving the Gaussian Naive Bayes Algorithm, which considers the use of the Bayes' Theorem for PDFs (Probability Density Functions) to obtain the posterior probability function. For the decision about the class, it's considered the Maximum a Posteriori (MAP) decision rule, which chooses the class that maximizes the posterior probability function. All the mathematical development can be seen in the reference [1], which can be found in the folder `references`.
 
 ## Results
 
