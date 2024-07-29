@@ -14,11 +14,17 @@ Binary Classification Bank Churn Dataset Cleaned from Kaggle: https://www.kaggle
 
 ## Implementation
 
-The implementation is based in the mathematical theory involving the Gaussian Naive Bayes Algorithm, which considers the use of the Bayes' Theorem for PDFs (Probability Density Functions) to obtain the posterior probability function. For the decision about the class, it's considered the Maximum a Posteriori (MAP) decision rule, which chooses the class that maximizes the posterior probability function. All the mathematical development can be seen in the reference [1], which can be found in the folder `references`.
+The implementation is based in the mathematical theory involving the Gaussian Naive Bayes Algorithm, which considers the use of the Bayes' Theorem for PDFs (Probability Density Functions) to obtain the posterior probability function. For the decision about the class, it's considered the Maximum a Posteriori (MAP) decision rule, which chooses the class that maximizes the posterior probability function. All the mathematical development can be seen in the reference [1], which can be found in the folder `references`. All the implementation is present in the file `gaussian_naive_bayes.py`, in the folder `src`.
 
 ## Results
 
+The file `test.ipynb`, in the folder `src`, contains the use of the models trained in the train data in the test data, so it can be showed that the result of the implemented algorithm is the same of the algorithm present in the `scikit-learn` library.
 
+- Predictions of the implemented algorithm:
+
+  
+
+- Predictions of the algorithm implemented by `scikit-learn`:
 
 ## References
 
