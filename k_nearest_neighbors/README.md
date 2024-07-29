@@ -42,7 +42,7 @@ Predictions of the algorithm implemented by scikit-learn:
     <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_nearest_neighbors/images/classifier_predictions_sklearn.png" alt="Material Bread logo">
 <p>
 
-For the classification, it can be seen that the results are nearly the same. The difference occur due to some other heuristics the `KNeighborsClassifier` from `scikit-learn` uses [2].
+For the classification, it can be seen that the results are nearly the same. The difference occur due to some other heuristics used by the `KNeighborsClassifier` from `scikit-learn` [2].
 
 - Regression (Admission in the University Prediction)
   
