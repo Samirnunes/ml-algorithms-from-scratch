@@ -9,3 +9,4 @@ Each folder has a `README` explaining the implemented algorithm.
 - Decision Tree
 - Naive Bayes
 - K-Nearest Neighbors
+- K-Means
