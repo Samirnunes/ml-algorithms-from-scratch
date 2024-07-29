@@ -18,13 +18,15 @@ The implementation is based in the mathematical theory involving the Gaussian Na
 
 ## Results
 
-The file `test.ipynb`, in the folder `src`, contains the use of the models trained in the train data in the test data, so it can be showed that the result of the implemented algorithm is the same of the algorithm present in the `scikit-learn` library [2].
+The file `test.ipynb`, in the folder `src`, contains the predictions in the in the bank churn test data given by the models trained in the train data, so it can be showed that the result of the implemented algorithm is the same of the algorithm present in the `scikit-learn` library [2].
 
 - Predictions of the implemented algorithm:
 
   
 
 - Predictions of the algorithm implemented by `scikit-learn`:
+
+
 
 ## References
 
