@@ -12,7 +12,7 @@ Data for Admission in the University from Kaggle: https://www.kaggle.com/dataset
 
 ## Implementation
 
-The implementation is present in the file `k_means.py`, in the folder `src`. The theory used for that is based in the reference [1]. For comparing the solution, you can see the implementation present in the `scikit-learn` library in reference [2].
+The implementation is present in the file `k_means.py`, in the folder `src`. The theory used for that is based in the reference [1], which can be found in the `references` folder. For comparing the solution, you can see the implementation present in the `scikit-learn` library in reference [2].
 
 ## Results
 
