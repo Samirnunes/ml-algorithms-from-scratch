@@ -1,6 +1,6 @@
 # Gaussian Naive Bayes Algorithm
 
-Naive Bayes is a simple method for constructing classifiers. There is not a single algorithm for training such classifiers, but a family of algorithms based on a common principle: all Naive Bayes classifiers assume that the value of a particular feature is independent of the value of any other feature, given the class variable. [1]
+Naive Bayes is a simple method for constructing classifiers. There is not a single algorithm for training such classifiers, but a family of algorithms based on a common principle: all Naive Bayes classifiers assume that the value of a particular feature is independent of the value of any other feature, given the class variable [1]. 
 
 Here, I implement the Gaussian Naive Bayes Algorithm, which consist in the hypothesis that the probability density of a continuous feature given a class of the target (i.e. the likelihood function of that feature for a given target class) is a normal distribution with mean &mu;<sub>k</sub> and standard deviation &sigma;<sub>k</sub>, that is, mean and standard deviation of the values associated with the class C<sub>k</sub>. 
 
