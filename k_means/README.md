@@ -16,35 +16,35 @@ Data for Admission in the University from Kaggle: https://www.kaggle.com/dataset
 
 ### Two features (GRE Score and CGPA)
 
-- Implementation
+#### Implementation
 
-Count of labels after clustering
+- Count of labels after clustering
 
 <p align="center">
     <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_means/images/two_var_count_implementation.png" alt="Material Bread logo">
 <p>
 
-WCSS along iterations
+- WCSS along iterations
 
 <p align="center">
     <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_means/images/two_var_wcss_implementation.png" alt="Material Bread logo">
 <p>
 
-Scatter plot with clusters
+- Scatter plot with clusters
 
 <p align="center">
     <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_means/images/two_var_clusters_implementation.png" alt="Material Bread logo">
 <p>
 
-- Scikit-learn
+#### Scikit-learn
 
-Count of labels after clustering
+- Count of labels after clustering
 
 <p align="center">
     <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_means/images/two_var_count_sklearn.png" alt="Material Bread logo">
 <p>
 
-Scatter plot with clusters
+- Scatter plot with clusters
 
 <p align="center">
     <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_means/images/two_var_clusters_sklearn.png" alt="Material Bread logo">
@@ -54,35 +54,35 @@ We can see that the results with two variables are exactly the same.
 
 ### All features
 
-- Implementation
+#### Implementation
 
-Count of labels after clustering
+- Count of labels after clustering
   
 <p align="center">
     <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_means/images/all_var_count_implementation.png" alt="Material Bread logo">
 <p>
 
-WCSS along iterations
+- WCSS along iterations
 
 <p align="center">
     <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_means/images/all_var_wcss_implementationg.png" alt="Material Bread logo">
 <p>
 
-Centroids
+- Centroids
 
 <p align="center">
     <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_means/images/all_var_centroids_implementation.png" alt="Material Bread logo">
 <p>
 
-- Scikit-learn
+#### Scikit-learn
 
-Count of labels after clustering
+- Count of labels after clustering
 
 <p align="center">
     <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_means/images/all_var_count_sklearn.png" alt="Material Bread logo">
 <p>
 
-Centroids
+- Centroids
 
 <p align="center">
     <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_means/images/all_var_centroids_wcss_sklearn.png" alt="Material Bread logo">
