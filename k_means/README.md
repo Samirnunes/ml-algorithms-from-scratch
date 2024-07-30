@@ -1,6 +1,6 @@
 # K-means with Lloyd's Algorithm
 
-
+K-means is an unsupervised learning algorithm which aims to cluster data based in its features. The most common algorithm uses an iterative refinement technique, and its called Lloyd's Algorithm or, generally, the "k-means algorithm". It is sometimes also referred to as "naive k-means", because there exist faster alternatives. The algorithm is divided in two steps: assingment of each observation (row of the dataframe) to a cluster and update of centroids. The assingment is done by determining, for each observation, the nearest centroid and then assigning the observation to the cluster with that centroid. The nearest centroid is the one with the smallest squared Euclidean distance to the observation. In turn, the update of centroids is done for each cluster by calculating the mean of all the observations in the cluster and then assigning that mean as the new centroid.
 
 ## Data
 
@@ -11,6 +11,8 @@ Data for Admission in the University from Kaggle: https://www.kaggle.com/dataset
 <p>
 
 ## Implementation
+
+The implementation is present in the file `k_means.py`, in the folder `src`. The theory used for that is based in the reference [1]. For comparing the solution, you can see the implementation present in the `scikit-learn` library in reference [2].
 
 ## Results
 
@@ -92,4 +94,6 @@ With all the features, the results were almost equal, with few differents due to
 
 ## References
 
-[1] https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
+[1] https://en.wikipedia.org/wiki/K-means_clustering
+
+[2] https://github.com/scikit-learn/scikit-learn/blob/70fdc843a/sklearn/cluster/_kmeans.py#L1196
