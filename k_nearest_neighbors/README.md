@@ -26,7 +26,7 @@ The implementation is present in the file `k_nearest_neighbors.py`, in the `src`
 
 ## Results
 
-For results, we will be comparing the output of the implemented algorithm and that from the `scikit-learn` library. The file `test.ipynb`, in the folder `src`, contains the predictions for both regressor and classifier, in their respectives datasets.
+For results, we will be comparing the output of the implemented algorithm and that from the `scikit-learn` library. The file `test.ipynb`, in the `src` folder, contains the predictions for both regressor and classifier, in their respectives datasets.
 
 - Classification (Churn Prediction)
 
