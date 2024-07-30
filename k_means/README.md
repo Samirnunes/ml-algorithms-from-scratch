@@ -88,7 +88,7 @@ We can see that the results with two variables are exactly the same.
     <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/k_means/images/all_var_centroids_wcss_sklearn.png" alt="Material Bread logo">
 <p>
 
-With all the features, the results were almost equal, with feel differents due to the sensitivy of K-Means in respect to the initial centroids.
+With all the features, the results were almost equal, with few differents due to the sensitivy of K-Means in respect to the initial centroids.
 
 ## References
 
