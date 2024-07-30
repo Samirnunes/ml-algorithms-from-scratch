@@ -4,7 +4,7 @@ Naive Bayes is a simple method for constructing classifiers. There is not a sing
 
 Here, I implement the Gaussian Naive Bayes Algorithm, which consist in the hypothesis that the probability density of a continuous feature given a class of the target (i.e. the likelihood function of that feature for a given target class) is a normal distribution with mean &mu;<sub>k</sub> and standard deviation &sigma;<sub>k</sub>, that is, mean and standard deviation of the values associated with the class C<sub>k</sub>. 
 
-This algorithm can only be used with continuous variables to make sense. Otherwise, if you have only discrete features, you may use the Multinomial Naive Bayes algorithm. However, if you have both types of variables, you need, for example, to fit a Gaussian for the continuous ones and a Multinomial to the discrete ones, and them make another model to make the prediction considering the output probabilities from both models as features.
+This algorithm can be only used with continuous variables to make sense. Otherwise, if you have only discrete features, you may use the Multinomial Naive Bayes algorithm. However, if you have both types of variables, you need, for example, to fit a Gaussian for the continuous ones and a Multinomial to the discrete ones, and them make another model to make the prediction considering the output probabilities from both models as features.
 
 ## Data
 
