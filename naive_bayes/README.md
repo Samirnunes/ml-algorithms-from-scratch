@@ -31,7 +31,7 @@ The file `test.ipynb`, in the folder `src`, contains the predictions in the in t
 - Predictions of the algorithm implemented by `scikit-learn`:
 
 <p align="center">
-    <img width="400" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/naive_bayes/images/prediction_sklearn_model.png" alt="Material Bread logo">
+    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/naive_bayes/images/prediction_sklearn_model.png" alt="Material Bread logo">
 <p>
 
 - Comparison
