@@ -15,7 +15,7 @@ where s is the step index, t is an index into the training sample, u is the inde
 In this implementation, a gaussian neighborhood function [2] is used:
 
 <p align="center">
-    <img width="300" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/gaussian_neighborhood_function.png" alt="Material Bread logo">
+    <img width="200" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/gaussian_neighborhood_function.png" alt="Material Bread logo">
 <p>
 
 where σt is called the neighborhood radius, which represents how much other neurons are influenced by the BMU, and ||rc - ri|| is the distance between a neuron and the BMU.
