@@ -44,6 +44,8 @@ The implementation is present in the file `som.py`, in the folder `src`. The the
     <img width="900" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/university_rating_feature_hist.png" alt="Material Bread logo">
 <p>
 
+SOM in fact separated data in groups, as can be seen in the pairplot and in the scatterplot, and data's topological structure is maintained, because, according to the histograms, nearby neurons have similar points and distant neurons have clearly different data. For example, neuron 0 has data assigned to it with higher values of CGPA and University Rating, while neuron 3, the farthest away from neuron 0 in the map space, has lower values of CGPA and University Rating. It can be concluded that there are 3 clusters, according to the plots, since neurons 1 and 2 have similar data.
+
 ## References
 
 [1] https://en.wikipedia.org/wiki/Self-organizing_map#:~:text=A%20self-organizing%20map%20(SOM,topological%20structure%20of%20the%20data.
