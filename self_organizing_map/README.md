@@ -17,31 +17,31 @@ The implementation is present in the file `som.py`, in the folder `src`. The the
 - SOM representation with neurons' weights (input space) and neurons' positions in the grid (map space)
 
 <p align="center">
-    <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/som_map.png" alt="Material Bread logo">
+    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/som_map.png" alt="Material Bread logo">
 <p>
 
 - SOM pairplot after PCA in the input points
 
 <p align="center">
-    <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/pairplot.png" alt="Material Bread logo">
+    <img width="700" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/pairplot.png" alt="Material Bread logo">
 <p>
 
 - SOM scatterplot after PCA in the input points
 
 <p align="center">
-    <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/scatterplot.png" alt="Material Bread logo">
+    <img width="700" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/scatterplot.png" alt="Material Bread logo">
 <p>
 
 - CGPA feature histogram by neuron
 
 <p align="center">
-    <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/cgpa_feature_hist.png" alt="Material Bread logo">
+    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/cgpa_feature_hist.png" alt="Material Bread logo">
 <p>
 
 - University Rating feature histogram by neuron
 
 <p align="center">
-    <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/university_rating_feature_hist.png" alt="Material Bread logo">
+    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/university_rating_feature_hist.png" alt="Material Bread logo">
 <p>
 
 ## References
