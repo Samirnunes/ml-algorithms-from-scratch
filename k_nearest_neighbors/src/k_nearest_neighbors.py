@@ -22,8 +22,8 @@ class KNearestNeighbors(ABC):
     def predict(self, X: pd.DataFrame):
         raise NotImplementedError("Must be implemented by the subclasses.")
     
-    def _nearest_neighbors(self, instance: pd.DataFrame):
-        distances = np.linalg.norm(self._instances.values - instance.values, axis=1)
+    def _nearest_neighbors(self, instance: np.array):
+        distances = np.linalg.norm(self._instances.values - instance, axis=1)
         distances = pd.Series(distances, index=self._instances.index)        
         nearest_distances = distances.sort_values(ascending=True)[:self._k]
         nearest_neighbors = nearest_distances.index
@@ -41,8 +41,7 @@ class KNearestNeighborsClassifier(KNearestNeighbors):
     def predict_proba(self, X: pd.DataFrame):
         assert self._fitted == True
         predictions = []
-        for i in X.index:
-            instance = X.loc[[i]]
+        for i, instance in enumerate(X.values):
             nearest_neighbors = self._nearest_neighbors(instance)
             neighbors_labels = self._labels.loc[nearest_neighbors]
             prediction = dict((neighbors_labels.value_counts()/len(neighbors_labels)).sort_index())
@@ -55,12 +54,10 @@ class KNearestNeighborsRegressor(KNearestNeighbors):
         
     def predict(self, X: pd.DataFrame):
         assert self._fitted == True
-        predictions = []
-        for i in X.index:
-            instance = X.loc[[i]]
+        predictions = np.empty(X.shape[0], dtype=np.float64)
+        for i, instance in enumerate(X.values):
             nearest_neighbors = self._nearest_neighbors(instance)
             neighbors_labels = self._labels.loc[nearest_neighbors]
-            prediction = neighbors_labels.values.mean()
-            predictions.append(prediction)
-        return np.array(predictions)
+            predictions[i] = neighbors_labels.values.mean()
+        return predictions
             
