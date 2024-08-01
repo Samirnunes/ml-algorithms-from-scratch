@@ -23,7 +23,7 @@ The implementation is present in the file `som.py`, in the folder `src`. The the
 - SOM pairplot after PCA in the input points
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/pairplot.png" alt="Material Bread logo">
+    <img width="900" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/pairplot.png" alt="Material Bread logo">
 <p>
 
 - SOM scatterplot after PCA in the input points
@@ -35,13 +35,13 @@ The implementation is present in the file `som.py`, in the folder `src`. The the
 - CGPA feature histogram by neuron
 
 <p align="center">
-    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/cgpa_feature_hist.png" alt="Material Bread logo">
+    <img width="900" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/cgpa_feature_hist.png" alt="Material Bread logo">
 <p>
 
 - University Rating feature histogram by neuron
 
 <p align="center">
-    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/university_rating_feature_hist.png" alt="Material Bread logo">
+    <img width="900" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/university_rating_feature_hist.png" alt="Material Bread logo">
 <p>
 
 ## References
