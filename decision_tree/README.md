@@ -36,6 +36,13 @@ With the tree built, it is possible to use the predict function to make predicti
 
 A method was also created to print the generated tree. It shows each node with its respective parents and children, as well as its entropy, information gain from the split into its children, feature used for the split, and the feature value threshold used in the split.
 
+### Tools
+
+- Python
+- Pandas
+- Numpy
+- Jupyter Notebook
+
 ## Results
 
 - Part of the built tree in the bank churn problem. The preprocessing for this problem uses a StandardScaler. [5]
