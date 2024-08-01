@@ -6,14 +6,6 @@ Here, I implement the Gaussian Naive Bayes Algorithm, which consist in the hypot
 
 This algorithm can be only used with continuous variables to make sense. Otherwise, if you have only discrete features, you may use the Multinomial Naive Bayes algorithm. However, if you have both types of variables, you need, for example, to fit a Gaussian for the continuous ones and a Multinomial to the discrete ones, and them create another model to make the prediction considering the output probabilities from both models as features.
 
-## Data
-
-Data for Admission in the University from Kaggle: https://www.kaggle.com/datasets/akshaydattatraykhare/data-for-admission-in-the-university?source=post_page-----b3cdb9de1a24--------------------------------
-
-<p align="center">
-    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/data.png" alt="Material Bread logo">
-<p>
-
 ## Implementation
 
 The implementation is based in the mathematical theory involving the Gaussian Naive Bayes Algorithm, which considers the use of the Bayes' Theorem for PDFs (Probability Density Functions) to obtain the posterior probability function. For the decision about the class, it's considered the Maximum a Posteriori (MAP) decision rule, which chooses the class that maximizes the posterior probability function. All the mathematical development can be seen in the reference [1], which can be found in the `references` folder. All the implementation is present in the file `gaussian_naive_bayes.py`, in the `src` folder.
@@ -24,6 +16,14 @@ The implementation is based in the mathematical theory involving the Gaussian Na
 - Pandas
 - Numpy
 - Jupyter Notebook
+
+## Data
+
+Data for Admission in the University from Kaggle: https://www.kaggle.com/datasets/akshaydattatraykhare/data-for-admission-in-the-university?source=post_page-----b3cdb9de1a24--------------------------------
+
+<p align="center">
+    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/data.png" alt="Material Bread logo">
+<p>
 
 ## Results
 
