@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-from shapely import centroid
 
 class KMeans:
     def __init__(self, k, max_iter=100, tol=1e-4, random_state=0):
