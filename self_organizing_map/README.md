@@ -42,6 +42,15 @@ Data for Admission in the University from Kaggle: https://www.kaggle.com/dataset
 
 The implementation is present in the file `som.py`, in the folder `src`. The theory used for that is based in the references [1] and [2], which can be found in the `references` folder.
 
+### Tools
+
+- Python
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
 ## Results
 
 - SOM representation with neurons' weights (input space) and neurons' positions in the grid (map space):
