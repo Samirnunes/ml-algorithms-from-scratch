@@ -54,7 +54,7 @@ Data for Admission in the University from Kaggle: https://www.kaggle.com/dataset
     <img width="400" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/final_loss.png" alt="Material Bread logo">
 <p>
 
-## Technologies and Libraries
+## Tools
 
 - Jupyter Notebook
 - Python
