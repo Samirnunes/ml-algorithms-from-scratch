@@ -4,7 +4,7 @@ A self-organizing map (SOM) is an unsupervised machine learning algorithm used t
 
 ## Implementation
 
-The implementation is present in the file `som.py`, in the `src` folder. The theory used for that is based in the references [1] and [2], which can be found in the `references` folder.
+The implementation is present in the `som.py` file, in the `src` folder. The theory used for that is based in the references [1] and [2], which can be found in the `references` folder.
 
 The algorithm's training uses an input data set, in the input space, to generate a lower-dimensional representation of the input data, in the map space. Then, it's possible to use the generated map to classify additional input data in the respective group. Each group is called neuron and all groups are aranged in the map space generally using a rectangular grid. To relate each neuron to the input space, each one is associated with a weight vector, which is the position of the node in the input space. Each weight vector, in this implementation, is initialized with a random selected example from the training data. In this context, while nodes in the map space stay fixed, training consists in moving weight vectors toward the input data while reducing the Euclidean distance between the input and the neurons based in the initial distance between then, without spoiling the topological structure from the map space. 
 
