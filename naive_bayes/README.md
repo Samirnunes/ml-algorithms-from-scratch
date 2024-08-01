@@ -8,7 +8,7 @@ This algorithm can be only used with continuous variables to make sense. Otherwi
 
 ## Implementation
 
-The implementation is based in the mathematical theory involving the Gaussian Naive Bayes Algorithm, which considers the use of the Bayes' Theorem for PDFs (Probability Density Functions) to obtain the posterior probability function. For the decision about the class, it's considered the Maximum a Posteriori (MAP) decision rule, which chooses the class that maximizes the posterior probability function. All the mathematical development can be seen in the reference [1], which can be found in the `references` folder. All the implementation is present in the `gaussian_naive_bayes.py` file, in the `src` folder.
+The implementation is based in the mathematical theory involving the Gaussian Naive Bayes Algorithm, which considers the use of the Bayes' Theorem for PDFs (Probability Density Functions) to obtain the posterior probability function. For the decision about the class, it's considered the Maximum a Posteriori (MAP) decision rule, which chooses the class that maximizes the posterior probability function. All the mathematical development can be seen in the reference [1], which can be found in the folder `references`. All the implementation is present in the file `gaussian_naive_bayes.py`, in the folder `src` .
 
 ### Tools
 
