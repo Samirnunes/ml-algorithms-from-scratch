@@ -21,6 +21,8 @@ The implementation is present in the file `k_means.py`, in the folder `src`. The
 - Python
 - Pandas
 - Numpy
+- Matplotlib
+- Seaborn
 - Jupyter Notebook
 
 ## Results
