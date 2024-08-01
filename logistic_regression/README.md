@@ -6,6 +6,8 @@ Logistic regression is one of the most well-known Machine Learning models and is
 
 ## Implementation
 
+The implementation is present in the file `logistic_regression.py`, in the `src` folder.
+
 <p align="center">
     <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/explanation1.PNG" alt="Material Bread logo">
 <p>
