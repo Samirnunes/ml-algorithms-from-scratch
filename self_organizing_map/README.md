@@ -48,13 +48,13 @@ The implementation is present in the file `som.py`, in the folder `src`. The the
     <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/som_map.png" alt="Material Bread logo">
 <p>
 
-- SOM pairplot after PCA (Principal Component Analysis) in the input points
+- SOM pairplot after applying PCA (Principal Component Analysis) in the input points
 
 <p align="center">
     <img width="900" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/pairplot.png" alt="Material Bread logo">
 <p>
 
-- SOM scatterplot after PCA in the input points
+- SOM scatterplot after applying PCA (Principal Component Analysis) in the input points
 
 <p align="center">
     <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/scatterplot.png" alt="Material Bread logo">
