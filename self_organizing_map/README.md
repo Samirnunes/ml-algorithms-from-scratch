@@ -7,7 +7,7 @@ The algorithm's training uses an input data set, in the input space, to generate
 Being more specific, when a training example fed to the network, its Euclidean distance to all weight vectors is computed. In this implementation, the training example is selected randomly from the dataset. The neuron whose weight vector is most similar to the input (smaller Euclidean distance) is called the best matching unit (BMU), and the weights of the BMU and neurons close to it in the SOM grid are adjusted towards the input vector. The magnitude of the change decreases between iterations and with the grid-distance from the BMU. The update formula for a neuron v with weight vector Wv(s) is:
 
 <p align="center">
-    <img width="400" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/update_formula.png" alt="Material Bread logo">
+    <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/update_formula.png" alt="Material Bread logo">
 <p>
 
 where s is the step index, t is an index into the training sample, u is the index of the BMU for the input vector D(t), α(s) is a monotonically decreasing learning rate; θ(u, v, s) is the neighborhood function which gives the distance between the neuron u and the neuron v in step s. 
@@ -15,7 +15,7 @@ where s is the step index, t is an index into the training sample, u is the inde
 In this implementation, a gaussian neighborhood function [2] is used:
 
 <p align="center">
-    <img width="400" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/gaussian_neighborhood_function.png" alt="Material Bread logo">
+    <img width="300" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/gaussian_neighborhood_function.png" alt="Material Bread logo">
 <p>
 
 where σt is called the neighborhood radius, which represents how much other neurons are influenced by the BMU, and ||rc - ri|| is the distance between a neuron and the BMU.
