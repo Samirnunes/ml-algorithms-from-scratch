@@ -2,14 +2,6 @@
 
 A self-organizing map (SOM) is an unsupervised machine learning algorithm used to produce a low-dimensional (typically two-dimensional) representation of a higher-dimensional data set while preserving the topological structure of the data. Besides, an SOM is a type of artificial neural network but is trained using competitive learning rather than the error-correction learning. It was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network [1].
 
-## Data
-
-Data for Admission in the University from Kaggle: https://www.kaggle.com/datasets/akshaydattatraykhare/data-for-admission-in-the-university?source=post_page-----b3cdb9de1a24--------------------------------
-
-<p align="center">
-    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/data.png" alt="Material Bread logo">
-<p>
-
 ## Implementation
 
 The implementation is present in the file `som.py`, in the folder `src`. The theory used for that is based in the references [1] and [2], which can be found in the `references` folder.
@@ -50,6 +42,14 @@ One already made implementation of SOM can be seen in the reference [3].
 - Matplotlib
 - Seaborn
 - Jupyter Notebook
+
+## Data
+
+Data for Admission in the University from Kaggle: https://www.kaggle.com/datasets/akshaydattatraykhare/data-for-admission-in-the-university?source=post_page-----b3cdb9de1a24--------------------------------
+
+<p align="center">
+    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/data.png" alt="Material Bread logo">
+<p>
 
 ## Results
 
