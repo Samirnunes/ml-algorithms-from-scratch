@@ -63,7 +63,7 @@ class SOM:
         fig, axes = plt.subplots(nrows=self.__ny, ncols=self.__nx, figsize=(20, 10), sharex=True, sharey=True)
         for i in range(self.__ny):
             for j in range(self.__nx):
-                neuron = self.map[(self.map["x"] == j) & (self.map["y"] == i)].index[0]
+                neuron = self.map[(self.map[self.__coordinates_cols[0]] == j) & (self.map[self.__coordinates_cols[1]] == i)].index[0]
                 data = X_pca_with_neuron[X_pca_with_neuron["neuron"] == neuron]
                 sns.scatterplot(ax=axes[i][j], data=data, x="pca1", y="pca2", hue="neuron", palette="dark")
         plt.show()
@@ -88,7 +88,7 @@ class SOM:
         X_with_neurons["neuron"] = self.predict(X_to_predict)
         for i in range(self.__ny):
             for j in range(self.__nx):
-                neuron = self.map[(self.map["x"] == j) & (self.map["y"] == i)].index[0]
+                neuron = self.map[(self.map[self.__coordinates_cols[0]] == j) & (self.map[self.__coordinates_cols[1]] == i)].index[0]
                 data = X_with_neurons[X_with_neurons["neuron"] == neuron]
                 sns.histplot(ax=axes[i][j], data=data, x=feature, hue="neuron", palette="dark")
         plt.show()
