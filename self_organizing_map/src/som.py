@@ -1,3 +1,4 @@
+from multiprocessing import Value
 import numpy as np
 import pandas as pd
 from sklearn.decomposition import PCA
@@ -11,8 +12,10 @@ class SOM:
         self.__learning_rate = learning_rate
         self.__neighborhood_radius = neighborhood_radius
         self.__decay_ratio = decay_ratio
+        self.__tol = tol
         self.__max_iter = max_iter
         self.__random_state = random_state
+        self.__test_hyperparameters()
         self.__fitted = False
         self.__features = []
         self.__coordinates_cols = ["x", "y"]
@@ -37,14 +40,12 @@ class SOM:
             self.__update_neurons(point, best_matching_unit)
             self.__update_hyperparameters()
             iter_count += 1
-            if np.allclose(self.map[self.__features], weights) or iter_count >= self.__max_iter:
+            if np.allclose(self.map[self.__features], weights, atol=self.__tol) or iter_count >= self.__max_iter:
                 self.__fitted = True
                 return self
             
     def predict(self, X: pd.DataFrame):
-        assert self.__fitted == True
-        assert list(X.columns) == self.__features
-        
+        self.__test_correct_fit(X)
         predictions = np.empty(X.shape[0], dtype=int)
         for i, point in enumerate(X.values):
             weights = self.map[self.__features]
@@ -53,9 +54,7 @@ class SOM:
         return predictions
     
     def pairplot(self, X: pd.DataFrame):
-        assert self.__fitted == True
-        assert list(X.columns) == self.__features
-        
+        self.__test_correct_fit(X)
         neurons = self.predict(X)
         pca = PCA(n_components=2)
         X_pca_with_neuron = pd.DataFrame(pca.fit_transform(X), columns=["pca1", "pca2"], index=X.index)
@@ -70,9 +69,7 @@ class SOM:
         plt.show()
         
     def scatterplot(self, X: pd.DataFrame):
-        assert self.__fitted == True
-        assert list(X.columns) == self.__features
-        
+        self.__test_correct_fit(X)
         neurons = self.predict(X)
         pca = PCA(n_components=2)
         X_pca_with_neuron = pd.DataFrame(pca.fit_transform(X), columns=["pca1", "pca2"], index=X.index)
@@ -81,8 +78,8 @@ class SOM:
         plt.show()
         
     def feature_hist(self, X_to_predict: pd.DataFrame, X_to_plot: pd.DataFrame, feature: str):
-        assert self.__fitted == True
-        assert feature in self.__features
+        self.__test_correct_fit(X_to_predict)
+        assert feature in X_to_plot.columns
         
         fig, axes = plt.subplots(nrows=self.__ny, ncols=self.__nx, figsize=(20, 10), sharex=True, sharey=True)
         X_with_neurons = X_to_plot.copy()
@@ -117,3 +114,34 @@ class SOM:
         distance = np.linalg.norm(neuron_xy - bmu_xy)
         return np.exp(-distance/(2*self.__neighborhood_radius**2))
         
+    def __test_correct_fit(self, X):
+        assert self.__fitted == True
+        assert list(X.columns) == self.__features
+    
+    def __test_hyperparameters(self):
+        if self.__nx <= 0 or self.__ny <= 0:
+            raise ValueError("Grid dimensions must be greater than 0.")
+        
+        if type(self.__nx) != int or type(self.__ny) != int:
+            raise TypeError("Grid dimensions must be int.")
+        
+        if self.__learning_rate <= 0:
+            raise ValueError("Learning rate must be greater than 0.")
+        
+        if self.__neighborhood_radius <= 0:
+            raise ValueError("Neighborhood radius must be greater than 0.")
+        
+        if self.__decay_ratio <= 1:
+            raise ValueError("Decay ratio must be greater or equal to 1.")
+        
+        if self.__tol <= 0:
+            raise ValueError("Tolerance must be greater than 0.")
+        
+        if self.__max_iter <= 0:
+            raise ValueError("Max iterations must be greater than 0.")
+        
+        if type(self.__max_iter) != int:
+            raise TypeError("Max iterations must be int.")
+        
+        if type(self.__random_state) != int:
+            raise TypeError("Random state must be int.")
