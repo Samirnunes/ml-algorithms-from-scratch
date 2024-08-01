@@ -16,6 +16,13 @@ Data for Admission in the University from Kaggle: https://www.kaggle.com/dataset
 
 The implementation is present in the file `k_means.py`, in the folder `src`. The theory used for that is based in the reference [1], which can be found in the `references` folder. For comparing the solution, you can see the implementation present in the `scikit-learn` library in reference [2].
 
+### Tools
+
+- Python
+- Pandas
+- Numpy
+- Jupyter Notebook
+
 ## Results
 
 ### Two features (GRE Score and CGPA)
