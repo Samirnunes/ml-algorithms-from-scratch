@@ -18,6 +18,15 @@ Logistic regression is one of the most well-known Machine Learning models and is
     <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/explanation3.PNG" alt="Material Bread logo">
 <p>
 
+### Tools
+
+- Jupyter Notebook
+- Python
+- Pandas
+- Sklearn
+- Numpy
+- Matplotlib
+
 ## Data
 
 COVID-19 Dataset from Kaggle: https://www.kaggle.com/datasets/meirnizri/covid19-dataset?source=post_page-----737ee80cba7d--------------------------------
@@ -57,12 +66,3 @@ COVID-19 Dataset from Kaggle: https://www.kaggle.com/datasets/meirnizri/covid19-
 <p align="center">
     <img width="300" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/prediction_count.PNG" alt="Material Bread logo">
 <p>
- 
-## Tools
-
-- Jupyter Notebook
-- Python
-- Pandas
-- Sklearn
-- Numpy
-- Matplotlib
