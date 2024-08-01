@@ -4,15 +4,7 @@
 
 Logistic regression is one of the most well-known Machine Learning models and is applied when we want to predict classifications through probabilities. Its principle involves the use of the sigmoid activation function in the weighted sum of feature values to obtain probabilities. These probabilities, when compared to a threshold, indicate the final classification of the target in that situation.
 
-## Data
-
-COVID-19 Dataset from Kaggle: https://www.kaggle.com/datasets/meirnizri/covid19-dataset?source=post_page-----737ee80cba7d--------------------------------
-
-<p align="center">
-    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/data.PNG" alt="Material Bread logo">
-<p>
-
-## Algorithm Implementation
+## Implementation
 
 <p align="center">
     <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/explanation1.PNG" alt="Material Bread logo">
@@ -24,6 +16,14 @@ COVID-19 Dataset from Kaggle: https://www.kaggle.com/datasets/meirnizri/covid19-
 
 <p align="center">
     <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/explanation3.PNG" alt="Material Bread logo">
+<p>
+
+## Data
+
+COVID-19 Dataset from Kaggle: https://www.kaggle.com/datasets/meirnizri/covid19-dataset?source=post_page-----737ee80cba7d--------------------------------
+
+<p align="center">
+    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/data.PNG" alt="Material Bread logo">
 <p>
 
 ## Results
