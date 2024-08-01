@@ -58,7 +58,7 @@ COVID-19 Dataset from Kaggle: https://www.kaggle.com/datasets/meirnizri/covid19-
     <img width="300" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/prediction_count.PNG" alt="Material Bread logo">
 <p>
  
-## Technologies and Libraries
+## Tools
 
 - Jupyter Notebook
 - Python
