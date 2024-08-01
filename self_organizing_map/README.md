@@ -25,7 +25,7 @@ Besides, the learning rate α and the neighborhood radius σt both decreases exp
 In summary, the implemented SOM algorithm is the following one [1]:
 
 <p align="center">
-    <img width="500" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/algorithm.png" alt="Material Bread logo">
+    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/algorithm.png" alt="Material Bread logo">
 <p>
 
 ## Data
