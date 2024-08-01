@@ -8,6 +8,8 @@ The codes step-by-step develop the linear regression model, following a logical 
 
 ## Implementation
 
+The implementation is present in the file `linear_regressor.py`, in the `src` folder.
+
 <p align="center">
     <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/explanation1.png" alt="Material Bread logo">
 <p>
