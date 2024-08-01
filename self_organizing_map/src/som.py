@@ -44,6 +44,7 @@ class SOM:
     def predict(self, X: pd.DataFrame):
         assert self.__fitted == True
         assert list(X.columns) == self.__features
+        
         predictions = np.empty(X.shape[0], dtype=int)
         for i, point in enumerate(X.values):
             weights = self.map[self.__features]
