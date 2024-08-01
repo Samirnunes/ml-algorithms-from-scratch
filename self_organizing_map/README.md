@@ -2,8 +2,6 @@
 
 A self-organizing map (SOM) is an unsupervised machine learning algorithm used to produce a low-dimensional (typically two-dimensional) representation of a higher-dimensional data set while preserving the topological structure of the data. Besides, an SOM is a type of artificial neural network but is trained using competitive learning rather than the error-correction learning. It was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network [1].
 
-The algorithm's training uses an input data set, in the input space, to generate a lower-dimensional representation of the input data, in the map space. Then, it's possible to use the generated map to classify additional input data in the respective group. Each group is called neuron and all groups are aranged in the map space generally using a rectangular grid. To relate each neuron to the input space, each one is associated with a weight vector, which is the position of the node in the input space. Each weight vector, in this implementation, is initialized with a random selected example from the training data. In this context, while nodes in the map space stay fixed, training consists in moving weight vectors toward the input data while reducing the Euclidean distance between the input and the neurons based in the initial distance between then, without spoiling the topological structure from the map space. 
-
 ## Data
 
 Data for Admission in the University from Kaggle: https://www.kaggle.com/datasets/akshaydattatraykhare/data-for-admission-in-the-university?source=post_page-----b3cdb9de1a24--------------------------------
@@ -15,6 +13,8 @@ Data for Admission in the University from Kaggle: https://www.kaggle.com/dataset
 ## Implementation
 
 The implementation is present in the file `som.py`, in the folder `src`. The theory used for that is based in the references [1] and [2], which can be found in the `references` folder.
+
+The algorithm's training uses an input data set, in the input space, to generate a lower-dimensional representation of the input data, in the map space. Then, it's possible to use the generated map to classify additional input data in the respective group. Each group is called neuron and all groups are aranged in the map space generally using a rectangular grid. To relate each neuron to the input space, each one is associated with a weight vector, which is the position of the node in the input space. Each weight vector, in this implementation, is initialized with a random selected example from the training data. In this context, while nodes in the map space stay fixed, training consists in moving weight vectors toward the input data while reducing the Euclidean distance between the input and the neurons based in the initial distance between then, without spoiling the topological structure from the map space. 
 
 When a training example fed to the network, its Euclidean distance to all weight vectors is computed. In this implementation, the training example is selected randomly from the dataset. The neuron whose weight vector is most similar to the input (smaller Euclidean distance) is called the best matching unit (BMU), and the weights of the BMU and neurons close to it in the SOM grid are adjusted towards the input vector. The magnitude of the change decreases between iterations and with the grid-distance from the BMU. The update formula for a neuron v with weight vector Wv(s) is:
 
