@@ -4,7 +4,7 @@ K-means is an unsupervised learning algorithm which aims to cluster data based i
 
 ## Implementation
 
-The implementation is present in the `k_means.py` file, in the `src` folder. The theory used for that is based in the reference [1], which can be found in the `references` folder. For comparing the solution, you can see the implementation present in the `scikit-learn` library in reference [2].
+The implementation is present in the file `k_means.py`, in the folder `src`. The theory used for that is based in the reference [1], which can be found in the folder `references`. For comparing the solution, you can see the implementation present in the `scikit-learn` library in reference [2].
 
 The algorithm is divided in two steps: assingment of each observation (row of the dataframe) to a cluster and centroids' update. The assingment is done by determining, for each observation, the nearest centroid and then assigning the observation to the cluster with that centroid. The nearest centroid is the one with the smallest squared Euclidean distance to the observation. In turn, the centroids' update is done for each cluster by calculating the mean of all the observations in the cluster and then assigning that mean as the new centroid. These steps are repeated until the centroids doesn't change between two iterations (with a tolerance) or the maximum number of iterations is reached.
 
