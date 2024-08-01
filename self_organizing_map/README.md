@@ -28,6 +28,8 @@ In summary, the implemented SOM algorithm is the following one [1]:
     <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/algorithm.png" alt="Material Bread logo">
 <p>
 
+One already made implementation of SOM can be seen in the reference [3].
+
 ## Data
 
 Data for Admission in the University from Kaggle: https://www.kaggle.com/datasets/akshaydattatraykhare/data-for-admission-in-the-university?source=post_page-----b3cdb9de1a24--------------------------------
@@ -79,3 +81,5 @@ SOM in fact separated data from the Admission in the University dataset (conside
 [1] https://en.wikipedia.org/wiki/Self-organizing_map#:~:text=A%20self-organizing%20map%20(SOM,topological%20structure%20of%20the%20data.
 
 [2] https://lamfo-unb.github.io/2020/08/29/Self-organizing-maps/
+
+[3] https://github.com/JustGlowing/minisom/blob/master/minisom.py
