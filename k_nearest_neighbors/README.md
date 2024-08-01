@@ -1,6 +1,19 @@
 # K-Nearest Neighbors Algorithm
 
-The K-Nearest Neighbors (KNN) is a non-parametric supervised learning algorithm used for classification and regression. The training examples are vectors in a multidimensional feature space, each with a class label. The training phase of the algorithm consists only of storing the feature vectors and class labels of the training samples. Besides, k is a user-defined constant. In the prediction phase, an unlabeled vector (a test instance) has the target predicted by assigning the label which is most frequent among the k training samples nearest to that point, in the case of classification, or the value given by the mean of the labels of the k nearest neighbors of that point, in the case of regression [1]. In this work, the Euclidean distance is used as distance metric.
+The K-Nearest Neighbors (KNN) is a non-parametric supervised learning algorithm used for classification and regression. The training examples are vectors in a multidimensional feature space, each with a class label. 
+
+## Implementation
+
+The implementation is present in the file `k_nearest_neighbors.py`, in the `src` folder. The theory used for that is based in the reference [1], which can be found in the `references` folder. In our implementation, we have the parent class `KNearestNeighbors`, from which derive the classes `KNearestNeighborsClassifier` and `KNearestNeighborsRegression`.
+
+The training phase of the algorithm consists only of storing the feature vectors and class labels of the training samples. Besides, k is a user-defined constant. In the prediction phase, an unlabeled vector (a test instance) has the target predicted by assigning the label which is most frequent among the k training samples nearest to that point, in the case of classification, or the value given by the mean of the labels of the k nearest neighbors of that point, in the case of regression [1]. In this work, the Euclidean distance is used as distance metric.
+
+### Tools
+
+- Python
+- Pandas
+- Numpy
+- Jupyter Notebook
 
 ## Data
 
@@ -19,17 +32,6 @@ Data for Admission in the University from Kaggle: https://www.kaggle.com/dataset
 <p align="center">
     <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/data.png" alt="Material Bread logo">
 <p>
-
-## Implementation
-
-The implementation is present in the file `k_nearest_neighbors.py`, in the `src` folder. The theory used for that is based in the reference [1], which can be found in the `references` folder. In our implementation, we have the parent class `KNearestNeighbors`, from which derive the classes `KNearestNeighborsClassifier` and `KNearestNeighborsRegression`.
-
-### Tools
-
-- Python
-- Pandas
-- Numpy
-- Jupyter Notebook
 
 ## Results
 
