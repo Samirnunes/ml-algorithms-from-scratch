@@ -2,8 +2,6 @@ import numpy as np
 import pandas as pd
 from abc import ABC, abstractmethod
 
-from sklearn import neighbors
-
 class KNearestNeighbors(ABC):
     def __init__(self, k=5):
         self._k = k
