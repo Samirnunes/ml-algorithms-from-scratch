@@ -26,7 +26,7 @@ where σt is called the neighborhood radius, which represents how much other neu
 
 Besides, the learning rate α and the neighborhood radius σt both decreases exponencially between iterations, according to the decay rate hyperparameter. 
 
-In summary, the implemented SOM algorithm is the following one [1]:
+In summary, the implemented SOM training algorithm is the following one [1]:
 
 <p align="center">
     <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/self_organizing_map/images/algorithm.png" alt="Material Bread logo">
