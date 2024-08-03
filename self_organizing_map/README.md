@@ -1,6 +1,6 @@
 # Self-Organizing Map (SOM)
 
-The self-organizing map (SOM) (as an algorithm) is an unsupervised machine learning algorithm used to produce a low-dimensional (typically two-dimensional) representation of a higher-dimensional data set while preserving the topological structure of the data. Besides, a SOM (as a model) is a type of artificial neural network but is trained using competitive learning rather than the error-correction learning. It was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network [1].
+The self-organizing map (SOM) learning algorithm is an unsupervised machine learning algorithm used to produce a low-dimensional (typically two-dimensional) representation of a higher-dimensional data set while preserving the topological structure of the data. In this context, the SOM, as a model (the output of the learning algorithm), is a type of artificial neural network but is trained using competitive learning rather than the error-correction learning. It was introduced by the Finnish professor Teuvo Kohonen in the 1980s and therefore is sometimes called a Kohonen map or Kohonen network [1].
 
 ## Implementation
 
