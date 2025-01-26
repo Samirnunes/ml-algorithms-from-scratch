@@ -11,3 +11,5 @@ Each folder has a `README` explaining the implemented algorithm.
 - K-Nearest Neighbors (KNN)
 - K-Means
 - Self-Organizing Map (SOM)
+- RBF (Radial Base Function) Network
+- Regularization Network
