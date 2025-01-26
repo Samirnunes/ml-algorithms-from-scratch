@@ -20,10 +20,6 @@ The algorithm is divided in two steps: assingment of each observation (row of th
 
 Data for Admission in the University from Kaggle: https://www.kaggle.com/datasets/akshaydattatraykhare/data-for-admission-in-the-university?source=post_page-----b3cdb9de1a24--------------------------------
 
-<p align="center">
-    <img width="800" src="./images/data.png" alt="Material Bread logo">
-<p>
-
 ## Results
 
 ### Two features (GRE Score and CGPA)
