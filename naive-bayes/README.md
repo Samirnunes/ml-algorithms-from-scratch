@@ -21,10 +21,6 @@ The implementation is based in the mathematical theory involving the Gaussian Na
 
 Data for Admission in the University from Kaggle: https://www.kaggle.com/datasets/akshaydattatraykhare/data-for-admission-in-the-university?source=post_page-----b3cdb9de1a24--------------------------------
 
-<p align="center">
-    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/linear_regression/images/data.png" alt="Material Bread logo">
-<p>
-
 ## Results
 
 The file `test.ipynb`, in the `src` folder , contains the predictions in the in the university admission test data given by the models trained in the train data, so it can be showed that the result of the implemented algorithm is the same of the algorithm present in the `scikit-learn` library [2] without the use of variable smoothing.
