@@ -32,19 +32,19 @@ The file `test.ipynb`, in the `src` folder , contains the predictions in the in 
 - Predictions of the implemented algorithm:
 
 <p align="center">
-    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/naive_bayes/images/prediction_implemented_model.png" alt="Material Bread logo">
+    <img width="600" src="./images/prediction_implemented_model.png" alt="Material Bread logo">
 <p>
 
 - Predictions of the algorithm implemented by `scikit-learn`:
 
 <p align="center">
-    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/naive_bayes/images/prediction_sklearn_model.png" alt="Material Bread logo">
+    <img width="600" src="./images/prediction_sklearn_model.png" alt="Material Bread logo">
 <p>
 
 - Comparison
 
 <p align="center">
-    <img width="400" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/naive_bayes/images/comparison.png" alt="Material Bread logo">
+    <img width="400" src="./naive_bayes/images/comparison.png" alt="Material Bread logo">
 <p>
 
 It can be seen that the results are the same. Therefore, the implementation made in this repository is consistent with `scikit-learn`.
