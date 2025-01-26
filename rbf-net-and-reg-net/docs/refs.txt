@@ -1,0 +1,3 @@
+https://innovationyourself.com/radial-basis-function-networks-rbfn/
+
+https://towardsdatascience.com/most-effective-way-to-implement-radial-basis-function-neural-network-for-classification-problem-33c467803319
