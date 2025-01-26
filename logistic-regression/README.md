@@ -9,15 +9,15 @@ Logistic regression is one of the most well-known Machine Learning models and is
 The implementation is present in the file `logistic_regression.py`, in the `src` folder.
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/explanation1.PNG" alt="Material Bread logo">
+    <img width="800" src="./images/explanation1.PNG" alt="Material Bread logo">
 <p>
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/explanation2.PNG" alt="Material Bread logo">
+    <img width="800" src="./images/explanation2.PNG" alt="Material Bread logo">
 <p>
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/explanation3.PNG" alt="Material Bread logo">
+    <img width="800" src="./images/explanation3.PNG" alt="Material Bread logo">
 <p>
 
 ### Tools
@@ -34,7 +34,7 @@ The implementation is present in the file `logistic_regression.py`, in the `src`
 COVID-19 Dataset from Kaggle: https://www.kaggle.com/datasets/meirnizri/covid19-dataset?source=post_page-----737ee80cba7d--------------------------------
 
 <p align="center">
-    <img width="800" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/data.PNG" alt="Material Bread logo">
+    <img width="800" src="./images/data.PNG" alt="Material Bread logo">
 <p>
 
 ## Results
@@ -42,29 +42,29 @@ COVID-19 Dataset from Kaggle: https://www.kaggle.com/datasets/meirnizri/covid19-
 - Train Loss
 
 <p align="center">
-    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/train_loss.PNG" alt="Material Bread logo">
+    <img width="600" src="./images/train_loss.PNG" alt="Material Bread logo">
 <p>
 
 - Precision-Recall Plot
   
 <p align="center">
-    <img width="600" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/precision_recall_plot.PNG" alt="Material Bread logo">
+    <img width="600" src="./images/precision_recall_plot.PNG" alt="Material Bread logo">
 <p>
 
 - Precision-Recall Scores
 
 <p align="center">
-    <img width="300" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/precision_recall_scores.PNG" alt="Material Bread logo">
+    <img width="300" src="./images/precision_recall_scores.PNG" alt="Material Bread logo">
 <p>
  
 - Prediction Count
  
 <p align="center">
-    <img width="300" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/prediction_count.PNG" alt="Material Bread logo">
+    <img width="300" src="./images/prediction_count.PNG" alt="Material Bread logo">
 <p>
  
 - Final Loss
 
 <p align="center">
-    <img width="300" src="https://github.com/Samirnunes/ml-algorithms-from-scratch/blob/main/logistic_regression/images/prediction_count.PNG" alt="Material Bread logo">
+    <img width="300" src="./images/prediction_count.PNG" alt="Material Bread logo">
 <p>
